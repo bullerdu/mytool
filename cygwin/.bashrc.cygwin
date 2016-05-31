@@ -1,0 +1,12 @@
+#alias
+alias dir='dir -N --color' 
+alias less='/bin/less -r' 
+alias ls='/bin/ls -F --color=tty --show-control-chars' 
+alias ll='ls -l'
+alias grep='grep --color'
+alias git='PATH=/usr/bin git'
+
+#export
+export PS1='\[\e[1;37m\][\u@\h \[\e[1;34m\]\W\[\e[1;37m\]]\[\e[1;36;5m\]\\$\[\e[m\]'
+export LC_ALL='zh_CN.GBK'
+export LANG='zh_CN.GBK'

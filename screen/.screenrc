@@ -1,0 +1,19 @@
+# 定义screen的功能键为Ctrl-Z,向终端输入Ctrl-Z时应按 Ctrl-Z z。
+escape ^Zz
+
+# 关闭闪屏
+vbell off
+
+# 启动时不显示欢迎屏幕
+startup_message off
+
+# 屏幕缓冲区 1024 行
+defscrollback 1024
+
+# 下标签设置
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %{..Y} %Y/%m/%d %c:%s"
+termcapinfo rxvt 'hs:ts=\E]2;:fs=\007:ds=\E]2;screen\007'
+termcapinfo xterm ti@:te@
+termcapinfo xterm 'hs:ts=\E]2;:fs=\007:ds=\E]2;screen\007'

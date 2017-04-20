@@ -1,6 +1,3 @@
-# 定义screen的功能键为Ctrl-Z,向终端输入Ctrl-Z时应按 Ctrl-Z z。
-escape ^Zz
-
 # 关闭闪屏
 vbell off
 
@@ -30,5 +27,3 @@ attrcolor b ".I"
 termcapinfo xterm-256color 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
 defbce "on"
 
-# 编码转换
-encoding GBK UTF-8
